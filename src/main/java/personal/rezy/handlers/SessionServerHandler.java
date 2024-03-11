@@ -7,7 +7,6 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import personal.rezy.BaseHandler;
 
 
 // 具体的Handler实现类，进行处理

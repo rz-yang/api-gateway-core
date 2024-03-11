@@ -8,7 +8,7 @@ public abstract class BaseHandler<T> extends SimpleChannelInboundHandler<T> {
 
     // 接收信息和ctx业务数据，并处理
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, T msg) {
+    protected void channelRead0(ChannelHandlerContext ctx, T msg) throws Exception {
         session(ctx, msg, ctx.channel());
 
     }
