@@ -15,7 +15,7 @@ public class SessionServerHandler extends SimpleChannelInboundHandler<FullHttpRe
     private final Logger logger = LoggerFactory.getLogger(SessionServerHandler.class);
 
     @Override
-    protected void channelRead0(ChannelHandlerContext channelHandlerContext, FullHttpRequest fullHttpRequest) throws Exception {
+    protected void channelRead0(ChannelHandlerContext channelHandlerContext, FullHttpRequest fullHttpRequest) {
         logger.info("网关收到的请求为 url: {} method: {}", fullHttpRequest.uri(), fullHttpRequest.method());
 
         // 返回的HTTP响应结构体
