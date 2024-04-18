@@ -7,6 +7,7 @@ import personal.rezy.SessionServer;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 
 public class ApiTest {
 
@@ -15,7 +16,6 @@ public class ApiTest {
     @Test
     public void test() throws ExecutionException, InterruptedException {
         SessionServer server = new SessionServer();
-
         Future<Channel> future = Executors.newFixedThreadPool(2).submit(server);
         Channel channel = future.get();
 
@@ -25,6 +25,7 @@ public class ApiTest {
             logger.info("Netty server启动服务中...");
             Thread.sleep(500);
         }
+
         logger.info("Netty server启动成功 {}", channel.localAddress());
 
         Thread.sleep(Long.MAX_VALUE);

@@ -34,7 +34,7 @@ public class SessionServerHandler extends SimpleChannelInboundHandler<FullHttpRe
         headers.add(HttpHeaderNames.ACCESS_CONTROL_ALLOW_HEADERS, "*");
         headers.add(HttpHeaderNames.ACCESS_CONTROL_ALLOW_METHODS, "GET, POST, PUT, DELETE");
         headers.add(HttpHeaderNames.ACCESS_CONTROL_ALLOW_CREDENTIALS, "true");
-
+        // channelHandlerContext.writeAndFlush(response);
         channelHandlerContext.channel().writeAndFlush(response);
     }
 
