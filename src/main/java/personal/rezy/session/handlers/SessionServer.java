@@ -1,4 +1,4 @@
-package personal.rezy;
+package personal.rezy.session.handlers;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -6,12 +6,10 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.http.HttpObjectAggregator;
-import io.netty.handler.codec.http.HttpRequest;
 import io.netty.handler.codec.http.HttpRequestDecoder;
 import io.netty.handler.codec.http.HttpResponseEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import personal.rezy.handlers.SessionServerHandler;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.Callable;

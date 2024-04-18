@@ -1,4 +1,4 @@
-package personal.rezy;
+package personal.rezy.session.handlers;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -6,7 +6,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpRequestDecoder;
 import io.netty.handler.codec.http.HttpResponseEncoder;
-import personal.rezy.handlers.SessionServerHandler;
+import personal.rezy.session.handlers.SessionServerHandler;
 
 public class SessionChannelInitializer extends ChannelInitializer<SocketChannel> {
 

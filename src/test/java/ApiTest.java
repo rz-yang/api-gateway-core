@@ -2,12 +2,11 @@ import io.netty.channel.Channel;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import personal.rezy.SessionServer;
+import personal.rezy.session.handlers.SessionServer;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
 public class ApiTest {
 

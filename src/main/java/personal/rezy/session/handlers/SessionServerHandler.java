@@ -1,4 +1,4 @@
-package personal.rezy.handlers;
+package personal.rezy.session.handlers;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
